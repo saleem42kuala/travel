@@ -1,0 +1,77 @@
+/* General Styles (Shared for Both Pages) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font choice */
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Slightly lighter background */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #3dcbe4, #e2a533); /* Gradient background */
+    color: white;
+    padding: 1rem; /* Use rem units for better scalability */
+    text-align: center; /* Center the header content */
+}
+
+header h1 { /* Add a heading to the header */
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Use flexbox for easy alignment */
+    justify-content: center; /* Center the menu items */
+}
+
+nav li {
+    margin: 0 1rem; /* Spacing using rem units */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text for contrast on gradient */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Admin Actions (Specific to Home Page) */
+#admin-actions {
+    text-align: center; /* Center the admin actions */
+    margin-bottom: 2rem;
+}
+
+#admin-actions ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Button Styles for Home Page */
+#admin-actions li a { /* Target the admin action buttons */
+    display: inline-block;
+    background-color: #3dcbe4; 
+    color: white;
+    padding: 1rem 2rem; /* Increase padding for bigger buttons */
+    border: none;
+    border-radius: 10px; /* Make corners more rounded */
+    font-size: 1.2rem;  /* Larger font size */
+    text-transform: uppercase; /* Make text uppercase */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add a more prominent shadow */
+    transition: all 0.3s ease; /* Transition for hover effects */
+}
+
+#admin-actions li a:hover {
+    background-color: #e2a533; 
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* Increase shadow on hover */
+    transform: translateY(-2px); /* Lift slightly on hover */
+}

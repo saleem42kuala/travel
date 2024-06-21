@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Section</title>
+    <link rel="stylesheet" href="css/new-packages.css"> 
+    <link rel="stylesheet" href="css/home.css"></head>
+<body>
+    <header>
+        </header>
+    
+    <main>
+        <h2>Create New Section</h2>
+        <form id="new-section-form">
+            <div class="section">
+                <h5>Trip Information</h5>
+                <div class="section-content">
+                    <div>
+                        <label for="trip-date">Date:</label>
+                        <input type="date" id="trip-date" name="trip-date">
+                    </div>
+                    <div>
+                        <label for="trip-type">Trip Type:</label>
+                        <select id="trip-type" name="trip-type">
+                            <option value="">Select Trip Type</option>
+                            <option value="day-trip">Day Trip</option>
+                            <option value="overnight">Overnight</option>
+                            <option value="multi-day">Multi-Day</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="car-type">Car Type:</label>
+                        <select id="car-type" name="car-type">
+                            <option value="">Select Car Type</option>
+                            <option value="compact">Compact</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="van">
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="trip-cost">Cost:</label>
+                        <input type="number" id="trip-cost" name="trip-cost">
+                    </div>
+                    <div>
+                        <label for="trip-price">Price:</label>
+                        <input type="number" id="trip-price" name="trip-price">
+                    </div>
+                </div>
+                    <div>
+                        <label for="trip-details">Details:</label>
+                        <textarea id="trip-details" name="trip-details"></textarea>
+                    </div>
+                
+                </div>
+            </div>
+        </form>
+        
+        
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="js/new-section.js"></script> 
+</body>
+</html>

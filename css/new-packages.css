@@ -1,0 +1,270 @@
+/* General Styles (Shared for Both Pages) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6; 
+    background-color: #f4f4f4;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 960px; 
+    margin: 0 auto; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Form Styles */
+#new-package-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; 
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8; 
+}
+
+/* Destination Selection */
+.package-details,
+.destination-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; 
+}
+
+.destination-selection select {
+    width: 200px; 
+}
+
+/* Table Styles */
+#destination-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#destination-table th, #destination-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Destination List */
+#destination-list {
+    margin-top: 20px;
+}
+
+.package-entry {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Package Columns (Grid Layout) */
+.package-columns {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for each section */
+    gap: 20px;
+}
+
+.package-columns h5 {
+    margin-top: 0;
+}
+
+/* Package Details */
+.package-details {
+    margin-bottom: 30px; /* Add spacing below package details section */
+    padding: 20px;
+    background-color: #fff; /* Light background for better contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual separation */
+}
+
+/* Destination Selection */
+.destination-selection {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* Light background for better contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual separation */
+}
+
+/* Package Columns (Grid Layout) */
+.package-columns {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows, each with automatic height */
+    gap: 20px;
+}
+
+.package-columns .column {
+    border-bottom: 1px solid #ddd; /* Add a separator line between rows */
+    padding-bottom: 10px; /* Add some padding at the bottom of each row */
+}
+
+.package-columns .column:last-child {
+    border-bottom: none; /* Remove the border from the last row */
+}
+
+.package-columns h5 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd; /* Add a separator line below the title */
+    padding-bottom: 10px;
+}
+
+/* Destination List */
+#destination-list h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.package-columns .column label {
+    display: block; /* Ensure labels are on their own line */
+}
+
+.package-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 20px; 
+}
+
+.package-columns .column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.package-columns h5 { /* Style for the "Dates," "Accommodation," and "Transportation" headings */
+    margin-top: 0;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 10px;
+}
+
+
+/* Package Columns (Grid Layout) */
+.package-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* Three columns */
+    gap: 20px;
+}
+
+.package-columns .column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable Flexbox for each column */
+    flex-direction: column; /* Stack items vertically (as rows) */
+}
+
+.package-columns label, 
+.package-columns input, 
+.package-columns select, 
+.package-columns textarea {
+    margin-bottom: 10px; /* Add spacing between items in a row */
+}
+
+.package-columns h5 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 10px;
+}
+
+/*======================*/
+
+/* ... (rest of your CSS) ... */
+
+/* Trip Information Section */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h5 { 
+    margin: 0 0 10px;
+    font-size: 1.2rem; 
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Flexbox Styling for Elements within Each Row */
+
+
+.section-content > div:last-child { /* Remove margin from the last element */
+    margin-right: 0;
+}
+
+/* Specific Styling for Input Fields and Labels */
+.section-content label,
+.section-content input,
+.section-content select,
+.section-content textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Adjust for Textarea Height */
+.section-content textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+.section-content {
+    display: grid;         /* Use grid for better control over columns */
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 20px;              /* Gap between columns */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    flex: 1;
+    margin-right: 10px;
+    text-align: right;
+}
+
+input {
+    flex: 2;
+    padding: 8px;
+    box-sizing: border-box;
+}
